@@ -1,0 +1,26 @@
+/* pt_doc_addTable */
+.input__text-addTb{ width: 440.288px; height: 50px; padding: 1em; border-radius: 5px; border: 0.5px solid #6D7683; background: #FFF; color: #333; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal; }
+/* construction_detail */
+.input-style00{height: 2em; padding: 0 1em; border-radius: 3px; border: 1px solid #000; background: #FFF; color: #333;  text-align: right; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal;}
+.input-style01{height: 2em; padding-right: 1em; border-radius: 3px; border: 1px solid #000; background: #FFF; color: #333;  text-align: right; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal;}
+.label-text-style00{color: #333; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 600; line-height: normal;}
+.input-style01::before {content: attr(data-placeholder); width: 100%;}
+.input-style01:focus::before, .input-style01:valid::before { display: none;}
+/* ad_reqMan */
+.label-adReqMan{display: flex; justify-content: space-between; align-items: center; color: #333; font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 600; line-height: normal;}
+.input-adReqMan{width: 273px; height: 60px; padding: .5em; align-items: center;  border-radius: 5px; border: 1px solid #6D7683; background: var(--default-white);
+                color: #333; text-align: right; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 500; line-height: 140%;  letter-spacing: -0.24px;}
+/* ad_reqMan_detail */
+.label-adReqManDetail{display: flex; justify-content: space-between; align-items: center; color: #000; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 600; line-height: normal;}
+.input-adReqManDetail{width: 440px; height: 50px; padding: .5em; align-items: center;  border-radius: 5px; border: 1px solid #000; background: var(--default-white);
+                      color: #000; text-align: right; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal;}
+.input-adReqManDetail-date{width: 210px; height: 50px; padding: .5em; align-items: center;  border-radius: 5px; border: 1px solid #000; background: var(--default-white);
+                            color: #000; text-align: right; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal;}
+.input-banner{width: 197px; height: 39px;  justify-content: flex-end; align-items: center; border-radius: 5px;  border: 0.5px solid var(--subtext); background: var(--default-white);
+              color: var(--subtext); text-align: right; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal}
+/* ad_reqMan_check */
+.input-adReqManCheck, .input-adReqManCheck-00{width: 100%; min-height: 50px; padding: .5em; border-radius: 5px; border: 1px solid #000; background: var(--default-white);
+    color: #000; text-align: left; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 500; line-height: normal;}
+.input-adReqManCheck-00{min-height: 150px;}
+.label-modal{ color: #333; text-align: center; font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.32px;}
+.input-modal{width: 273px; height: 60px; margin-left: 1em; padding: 1em; border-radius: 5px; border: 1px solid var(--subtext); background: #FFF; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 500; line-height: 140%; letter-spacing: -0.24px; }

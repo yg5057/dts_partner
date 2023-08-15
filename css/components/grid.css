@@ -1,0 +1,3 @@
+.gridCon__left, .gridCon__right, .gridCon__right-addTb, 
+.gridCon__left-sampleWrite, .gridCon__right-sampleWrite,
+.gridCon__left-consDocWrite, .gridCon__right-consDocWrite{width: 100%; min-height: 44em; border-radius: 10px; border: 1px dashed #000;}

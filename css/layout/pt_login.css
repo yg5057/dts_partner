@@ -1,0 +1,22 @@
+.wrapper { width: 100vw; height: 100vh;}
+.login { background-image: url(../../image/lgoin_bg_image.jpg); background-repeat:no-repeat; background-size : 100% 100%; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap:2.5em;}
+.logo__image{ width: 360px; height: 210px;}
+.login__form{width: 573px; height: 456px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.login-box{width: 553px; height: 284px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .2em;}
+.form-group{display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 0.5em;}
+.form-input{width: 504px; height: 90px; padding: 1.5em; align-items: center; color: #333; font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 500; line-height: 140%; letter-spacing: -0.32px;}
+.login__btn{width: 553px; height: 76px; border-radius: 15px; margin-top: .5em; color: #FFF; text-align: center; font-family: Pretendard; font-size: 32px; font-style: normal;font-weight: 700; line-height: 16px; letter-spacing: -1px;}
+.form-btn{display: block; padding: .8em;}
+.form-btn1, .form-btn2, .form-btn3{width: 126px; height: 40px; padding: .5em;}
+.form-btn2{margin-right: 150px;}
+
+
+/* box style */
+.login-box-bg{border-radius: 20px; background: var(--nav-i-hover)}
+.login-box-wh{border-radius: 15px; background: var(--default-white)}
+/* input-style */
+.form-input-id, .form-input-pw{border-radius: 5px;  border: 1px solid var(--subtext, #6D7683); background: #FFF;}
+.form-input-id:hover, .form-input-pw:hover{ border: 2px solid #FF002E; cursor: pointer;}
+.form-input-id:hover + .form-text{display:block; color: var(--primary-500, #F14B30); font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.24px;}
+/* form-text-style */
+.form-text{display: none;}

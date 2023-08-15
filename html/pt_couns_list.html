@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <!-- Fullcalendar cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="../JS/fullcalendar.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+                <div class="inner__group">
+                    <div class="group__username">
+                        <i class="username-icon fa-solid fa-circle-user"></i>
+                        <p class="username-text">ooo님</p>
+                    </div>
+                    <img src="../image/Group 2817.png" alt="" class="group__alert">
+                </div>
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li>
+                        <a href="./pt_main.html" class="nav__menu">
+                            <i class="menu-icon fas fa-home"></i>
+                            <span class="menu-text">메인화면</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_couns.html" class="nav__menu">
+                            <i class="menu-icon fas fa-user"></i>
+                            <span class="menu-text">상담관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_couns_list.html" class="hide-text">상담 요청 목록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pt_construction_list.html" class="nav__menu">
+                            <i class="menu-icon fas fa-wallet"></i>
+                            <span class="menu-text">공사관리</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_doc.html" class="nav__menu">
+                            <i class="menu-icon fas fa-question-circle"></i>
+                            <span class="menu-text">문서관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_doc_item.html" class="hide-text">항목 관리</a></li>
+                            <li><a href="./pt_doc_sampleList.html" class="hide-text">샘플 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_calculate.html" class="nav__menu">
+                            <i class="menu-icon fas fa-chart-bar"></i>
+                            <span class="menu-text">정산관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_calculate_list.html" class="hide-text">최근 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">월 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">공사 정산 목록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_info.html" class="nav__menu">
+                            <i class="menu-icon fas fa-cog"></i>
+                            <span class="menu-text">정보관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__logout">
+                            <i class="menu-icon fas fa-sign-out-alt"></i>
+                            <span class="menu-text">로그아웃</span>
+                        </a>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상담관리</p>
+                </div><!--main__top-->
+                <div class="main__bottom-list">
+                    <div class="bottom-list__search">
+                        <div class="seach__inputwrap">
+                            <input type="text" class="search__inputwrap-searchbar searchbar-style00"
+                                placeholder="검색어를 입력해 주세요.">
+                            <div class="search__inputwrap-circle"></div>
+                            <i class="serch__inputwrap-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="search__btn">
+                            <button class="btn-btn00 btn_style00">전체 상담보기</button>
+                            <button class="btn-btn01 btn_style00">현장 방문 신청보기</button>
+                        </div>
+                    </div>
+                    <div class="bottom-list__table">
+                        <table class="table__couns-tb">
+                            <thead class="couns-tb__couns-th">
+                                <tr>
+                                    <th class="counslist-th-text">번호</th>
+                                    <th class="counslist-th-text">현장명</th>
+                                    <th class="counslist-th-text">면적</th>
+                                    <th class="counslist-th-text">희망금액</th>
+                                    <th class="counslist-th-text">진행상황</th>
+                                </tr>
+                            </thead>
+                            <tbody class="couns-tb__couns-td">
+                                <tr onclick="location.href='pt_couns_info.html';">
+                                    <td class="couns-td couns-td-text">5</td>
+                                    <td class="couns-td couns-td-text">광주광역시 동구 금남로 4가 6, 3층 303호</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">200m^2</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">123,000,000</td>
+                                    <td class="couns-td couns-td-text text-clr-accent">요청됨</td>
+                                </tr>
+                                <tr onclick="location.href='pt_couns_info.html';">
+                                    <td class="couns-td couns-td-text">5</td>
+                                    <td class="couns-td couns-td-text">광주광역시 동구 금남로 4가 6, 3층 303호</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">200m^2</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">123,000,000</td>
+                                    <td class="couns-td couns-td-text text-clr-accent">요청됨</td>
+                                </tr>
+                                <tr onclick="location.href='pt_couns_info.html';">
+                                    <td class="couns-td couns-td-text">5</td>
+                                    <td class="couns-td couns-td-text">광주광역시 동구 금남로 4가 6, 3층 303호</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">200m^2</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">123,000,000</td>
+                                    <td class="couns-td couns-td-text text-clr-accent">요청됨</td>
+                                </tr>
+                                <tr onclick="location.href='pt_couns_info.html';">
+                                    <td class="couns-td couns-td-text">5</td>
+                                    <td class="couns-td couns-td-text">광주광역시 동구 금남로 4가 6, 3층 303호</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">200m^2</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">123,000,000</td>
+                                    <td class="couns-td couns-td-text text-clr-accent">요청됨</td>
+                                </tr>
+                                <tr onclick="location.href='pt_couns_info.html';">
+                                    <td class="couns-td couns-td-text">5</td>
+                                    <td class="couns-td couns-td-text">광주광역시 동구 금남로 4가 6, 3층 303호</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">200m^2</td>
+                                    <td class="couns-td couns-td-text text-clr-gr">123,000,000</td>
+                                    <td class="couns-td couns-td-text text-clr-accent">요청됨</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!--main__bottom-list-->
+                <div class="main__couns-pagewrap">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">&lt;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&gt;</a></li>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div><!--main__couns-pagewrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

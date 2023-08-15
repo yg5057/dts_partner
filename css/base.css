@@ -1,0 +1,60 @@
+:root {
+    /* color */
+    --normal : #333333;
+    --accent: #D1372A;
+    --error: #FF002E;
+    --placeholder: #110e0e;
+    --nav: #385787;
+    --button-gray: #6D7683;
+    --button-bg-gray:#E3E3E3; --main-tablehd:#E3E3E3;
+    --button-bg-pk:#F9D9DC;
+    --button-rd:#B52717;
+    --nav-i-br:#6E553E;
+    --nav-bg: #BEAFA2;
+    --nav-i-hover:#D9CFC6;
+    --default-white:#FFFFFF;
+    --light-blue:#5EB0FC;
+    --bg-login:#D9CFC6;
+    --bg-main: #EFEFEF;
+    --red-main-top: #E63527;
+    --pk-main-top:#FFEBED;
+    --pch-main-top:#EF9C98;
+    --header-gr:#D9D9D9;
+    --font-bk:#333333;
+    --tb-text-gr:#727272;
+    --tb-text-bl:#2440D1;
+    --border-gr:#828282;
+    --subtext:#6D7683;
+    --admin-i-gray:#A1A1A1;
+    /* font */
+    --font-size-2xs: 0.25em;
+    --font-size-xs: 0.5em;
+    --font-size-sm: 0.625em;
+    --font-size-md: 1em;
+    --font-size-lg: 1.5em;
+    --font-size-xl: 2em;
+    --font-size-2xl: 2.5em;
+    /* margin */
+    --margin-2xs: 0.25em;
+    --margin-xs: 0.5em;
+    --margin-sm: 0.625em;
+    --margin-md: 1em;
+    --margin-lg: 1.5em;
+    --margin-xl: 2em;
+    --margin-2xl: 2.5em;
+    --margin-gap-md:41.49em;
+    /* padding */
+    --padding-2xs: 0.25em;
+    --padding-xs: 0.5em;
+    --padding-sm: 0.625em;
+    --padding-md: 1em;
+    --padding-lg: 1.5em;
+    --padding-xl: 2em;
+    --padding-2xl: 2.5em;
+    --padding-gap-sm:10em;
+    --padding-gap-md:35em;
+    --padding-header-inner: 0 1.5em 0 5.3em;
+    /* border */
+    --border-radius-xs: 0.4em;
+    --border-radius-s: 8em;
+}

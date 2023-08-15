@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <!-- chart.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script defer src="../JS/main_chart.js"></script>
+    <!-- Fullcalendar cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script defer src="../JS/fullcalendar.js"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+                <div class="inner__group">
+                    <div class="group__username">
+                        <i class="username-icon fa-solid fa-circle-user"></i>
+                        <p class="username-text">ooo님</p>
+                    </div>
+                    <img src="../image/Group 2817.png" alt="" class="group__alert">
+                </div>
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li>
+                        <a href="./pt_main.html" class="nav__menu">
+                            <i class="menu-icon fas fa-home"></i>
+                            <span class="menu-text">메인화면</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_couns.html" class="nav__menu">
+                            <i class="menu-icon fas fa-user"></i>
+                            <span class="menu-text">상담관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_couns_list.html" class="hide-text">상담 요청 목록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pt_construction_list.html" class="nav__menu">
+                            <i class="menu-icon fas fa-wallet"></i>
+                            <span class="menu-text">공사관리</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_doc.html" class="nav__menu">
+                            <i class="menu-icon fas fa-question-circle"></i>
+                            <span class="menu-text">문서관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_doc_item.html" class="hide-text">항목 관리</a></li>
+                            <li><a href="./pt_doc_sampleList.html" class="hide-text">샘플 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_calculate.html" class="nav__menu">
+                            <i class="menu-icon fas fa-chart-bar"></i>
+                            <span class="menu-text">정산관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_calculate_list.html" class="hide-text">최근 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">월 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">공사 정산 목록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_info.html" class="nav__menu">
+                            <i class="menu-icon fas fa-cog"></i>
+                            <span class="menu-text">정보관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__logout">
+                            <i class="menu-icon fas fa-sign-out-alt"></i>
+                            <span class="menu-text">로그아웃</span>
+                        </a>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">정산관리</p>
+                </div><!--main__top-->
+                <div class="main__cal-top">
+                    <div class="dash-top__box">
+                        <div class="box__amount">
+                            <h3 class="box-text-cal">전체 공사 금액</h3>
+                            <div class="amount__card">
+                                <p class="card-text">123,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash-top__box">
+                        <div class="box__amount">
+                            <h3 class="box-text-cal">수급 완료 금액</h3>
+                            <div class="amount__card">
+                                <p class="card-text">123,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash-top__box">
+                        <div class="box__match">
+                            <div class="box__amount">
+                                <h3 class="box-text-cal">정산 예정 금액</h3>
+                                <div class="amount__card">
+                                    <p class="card-text">123,000,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--main__cal-top-->
+                <div class="main__dash-bottom">
+                    <div class="dash-bottom__box">
+                        <div class="box__gridCon-calculate">
+                            <div class="grid-top">
+                                <div class="grid__tablehead">
+                                    <h3 class="tablehead-text">진행 중 공사 목록</h3>
+                                </div>
+                                <table class="grid__cal-table">
+                                    <tr onclick="location.href='pt_construction_detail.html';">
+                                        <td class="table__text table__title-text">광주광역시 동구 금남로 4가6</td>
+                                        <td class="table__text">60,000,000</td>
+                                    </tr>
+                                    <tr onclick="location.href='pt_construction_detail.html';">
+                                        <td class="table__text table__title-text">광주광역시 동구 금남로 4가6</td>
+                                        <td class="table__text">60,000,000</td>
+                                    </tr>
+                                    <tr onclick="location.href='pt_construction_detail.html';">
+                                        <td class="table__text table__title-text">광주광역시 동구 금남로 4가6</td>
+                                        <td class="table__text">60,000,000</td>
+                                    </tr>
+                                </table>
+                                <div class="grid-top__textbox"></div>
+                            </div>
+                            <div class="grid-top">
+                                <div class="grid__tablehead">
+                                    <h3 class="tablehead-text">최근 정산 목록</h3>
+                                </div>
+                                <table class="grid__cal-table">
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__text"><a class="table__title-text" href="">광주광역시 동구 금남로
+                                                4가6</a></td>
+                                        <td class="table__text">60,000,000</td>
+                                        <td class="table__text">2023.05.11</td>
+                                        <td class="table__text">
+                                            <div class="table__chip chip-style-green">중도 1차</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div><!--gird-container-->
+                    </div><!--bottom-box-->
+                </div><!--main-bottom-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/* section calendar */
+.sec_cal { width: auto; margin: 0 auto; padding: 1em; font-family: 'GmarketSansMedium';}
+.sec_cal .cal_nav {display: flex;justify-content: center;align-items: center;font-weight: 700;font-size: 48px;line-height: 78px;}
+.sec_cal .cal_nav .year-month { width: auto; text-align: center; line-height: 1; color: #6E553E;}
+.sec_cal .cal_nav .nav { display: flex; border: 1px solid  #6E553E; border-radius: 5px }
+.sec_cal .cal_nav .go-prev, .sec_cal .cal_nav .go-next { display: block; width: 50px; height: 78px; font-size: 0; display: flex; justify-content: center; align-items: center }
+.sec_cal .cal_nav .go-prev::before, .sec_cal .cal_nav .go-next::before { content: ""; display: block; width: 20px; height: 20px; border: 3px solid  #BEAFA2; border-width: 3px 3px 0 0; transition: border 0.1s }
+.sec_cal .cal_nav .go-prev:hover::before, .sec_cal .cal_nav .go-next:hover::before {border-color: #E84949;}
+.sec_cal .cal_nav .go-prev::before {transform: rotate(-135deg);}
+.sec_cal .cal_nav .go-next::before {transform: rotate(45deg);}
+.sec_cal .cal_wrap {padding-top: 40px; position: relative; margin: 0 auto;}
+.sec_cal .cal_wrap .days { display: flex; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #ddd }
+.sec_cal .cal_wrap::after {top: 368px;}
+.sec_cal .cal_wrap .day {display:flex; align-items: center; justify-content: center; width: calc(100% / 7); color: #6E553E; text-align: center; border-radius:5px}
+.bottom__right .day {font-size: 24px; height: 35%;} /* 상담관리 캘린더 */
+.today{background: #3333;}
+.sec_cal .cal_wrap .dates {display: flex; flex-flow: wrap; height: 290px;}
+.sec_cal .cal_wrap .day:nth-child(7n -1) {color: #3c6ffa;}
+.sec_cal .cal_wrap .day:nth-child(7n) {color:  #E84949;}
+.sec_cal .cal_wrap .day.disable {color: #ddd;}
+
+

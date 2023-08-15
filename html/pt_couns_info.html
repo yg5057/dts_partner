@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <!-- Fullcalendar cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="../JS/fullcalendar.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+                <div class="inner__group">
+                    <div class="group__username">
+                        <i class="username-icon fa-solid fa-circle-user"></i>
+                        <p class="username-text">ooo님</p>
+                    </div>
+                    <img src="../image/Group 2817.png" alt="" class="group__alert">
+                </div>
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li>
+                        <a href="./pt_main.html" class="nav__menu">
+                            <i class="menu-icon fas fa-home"></i>
+                            <span class="menu-text">메인화면</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_couns.html" class="nav__menu">
+                            <i class="menu-icon fas fa-user"></i>
+                            <span class="menu-text">상담관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_couns_list.html" class="hide-text">상담 요청 목록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pt_construction_list.html" class="nav__menu">
+                            <i class="menu-icon fas fa-wallet"></i>
+                            <span class="menu-text">공사관리</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_doc.html" class="nav__menu">
+                            <i class="menu-icon fas fa-question-circle"></i>
+                            <span class="menu-text">문서관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_doc_item.html" class="hide-text">항목 관리</a></li>
+                            <li><a href="./pt_doc_sampleList.html" class="hide-text">샘플 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_calculate.html" class="nav__menu">
+                            <i class="menu-icon fas fa-chart-bar"></i>
+                            <span class="menu-text">정산관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_calculate_list.html" class="hide-text">최근 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">월 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">공사 정산 목록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_info.html" class="nav__menu">
+                            <i class="menu-icon fas fa-cog"></i>
+                            <span class="menu-text">정보관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__logout">
+                            <i class="menu-icon fas fa-sign-out-alt"></i>
+                            <span class="menu-text">로그아웃</span>
+                        </a>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상담관리</p>
+                </div><!--main__top-->
+                <div class="main__counsinfo-bottm-wrap">
+                    <div class="counsinfo-bottm-wrap__left">
+                        <div class="left__flex-container">
+                            <div class="flex-container__title div-style-02 text-style-02">
+                                <p>신청자 정보</p>
+                            </div>
+                            <div class="flex-container__a1 div-style-00">
+                                <div class="a1__grid-top div-style-01">
+                                    <div class="grid-top__item1">
+                                        <p class="text-style-00">이름</p>
+                                        <p class="text-style-01">OOO</p>
+                                    </div>
+                                    <div class="grid-top__item2">
+                                        <P class="text-style-00">연락처</P>
+                                        <P class="text-style-01">010-1234-5678</P>
+                                    </div>
+                                    <div class="grid-top__item3">
+                                        <P class="text-style-00">방문 희망 날짜</P>
+                                        <P class="text-style-01">2023년 05월 25일</P>
+                                    </div>
+                                </div>
+                                <div class="a1__grid-bottom">
+                                    <div class="grid-bottom__item1">
+                                        <p class="text-style-00">주소</p>
+                                        <p class="text-style-01">광주광역시 동구 금남로 4가6, 3층 303호</p>
+                                    </div>
+                                    <div class="grid-bottom__item2">
+                                        <p class="text-style-00">면적</p>
+                                        <div class="item2__areabox">
+                                            <p class="text-style-01">200m^2</p>
+                                            <i class="fa-solid fa-arrows-rotate"></i>
+                                            <p class="text-style-01">128평</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-bottom__item3">
+                                        <p class="text-style-00">희망금액</p>
+                                        <p class="text-style-01">123,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container__title div-style-02 text-style-02">
+                                <p>질의 응답</p>
+                            </div>
+                            <div class="flex-container__a2">
+                                <div class="a2__grid-left div-style-00">
+                                    <div class="grid-left__item1 div-style-01">
+                                        <p class="text-style-00">어떤 인테리어를 하시나요?</p>
+                                        <p class="text-style-01">아파트</p>
+                                    </div>
+                                    <div class="grid-left__item2">
+                                        <p class="text-style-00">어떤 인테리어를 하시나요?</p>
+                                        <p class="text-style-01">아파트</p>
+                                    </div>
+                                </div>
+                                <div class="a2__grid-right div-style-00">
+                                    <div class="grid-right__item3 div-style-01">
+                                        <p class="text-style-00">어디까지 인테리어 하시나요?</p>
+                                        <p class="text-style-01">전체</p>
+                                    </div>
+                                    <div class="grid-right__item4 div-style-01">
+                                        <p class="text-style-00">계획하신 공정을 남겨주세요</p>
+                                        <div></div>
+                                    </div>
+                                    <div class="grid-right__item5">
+                                        <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                        <p class="text-style-01"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container__a3 div-style-00">
+                                <div class="a3__grid-item1 div-style-01">
+                                    <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                    <p class="text-style-01"></p>
+                                </div>
+                                <div class="a3__grid-item2 div-style-01">
+                                    <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                    <div></div>
+                                </div>
+                                <div class="a3__grid-item3 div-style-01">
+                                    <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                    <p class="text-style-01"></p>
+                                </div>
+                                <div class="a3__grid-item4 div-style-01">
+                                    <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                    <p class="text-style-01"></p>
+                                </div>
+                                <div class="a3__grid-item5 div-style-01">
+                                    <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                    <p class="text-style-01"></p>
+                                </div>
+                                <div class="a3__grid-item6">
+                                    <p class="text-style-00">인테리어를 하려는 목적이 무엇인가요?</p>
+                                    <p class="text-style-01"></p>
+                                </div>
+                            </div>
+                            <div class="flex-container__a4 div-style-00">
+                                <p class="text-style-00">공사내용</p>
+                                <p class="text-style-01"></p>
+                            </div>
+                            <div class="flex-container__a5 div-style-00">
+                                <div class="a5__grid-item1 div-style-01">
+                                    <p class="text-style-00">현재 가지고 있는 보험을 선택해주세요.</p>
+                                    <div></div>
+                                </div>
+                                <div class="a5__grid-item2 div-style-01">
+                                    <p class="text-style-00">공사 중 현장 방문이 가능한 시간</p>
+                                    <p class="text-style-01">오후 4시</p>
+                                </div>
+                                <div class="a5__grid-item3 div-style-01">
+                                    <p class="text-style-00">인테리어 업체에게 가장 바라는 점은 어떤 내용이신가요?</p>
+                                    <p class="text-style-01">친절하게 상담, 깔끔하게 시공</p>
+                                </div>
+                                <div class="a5__grid-item4">
+                                    <p class="text-style-00">이번 인테리어 공사에서 적용하려고 하는 이미지나 내용</p>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div><!--left__flex-container-->
+                    </div>
+                    <div class="counsinfo-bottm-wrap__right">
+                        <div class="right__box-counsInfo banner-style">
+                            <div>
+                                <p class="box-counsInfo-text00">방문희망 날짜</p>
+                                <p class="box-counsInfo-text01">2023.05.15</p>
+                            </div>
+                            <div>
+                                <p class="box-counsInfo-text00">방문 날짜</p>
+                                <button class="box-counsInfo-btn00 btn-style-pk" type="button">선택</button>
+                            </div>
+                            <div>
+                                <button class="box-counsInfo-btn01 btn-style-rd" type="button">현장 방문 신청하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--counsinfo-bottm-wrap__left  -->
+        </div><!--main-box-->
+        </section><!--main-->
+    </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

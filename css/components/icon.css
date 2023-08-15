@@ -1,0 +1,12 @@
+.chip-style-gray{border-radius: 28px; background: #E3E3E3; padding: 8px 16px; color: var(--subtext); text-align: center;  font-family: Pretendard; font-size: 15px; font-style: normal; font-weight: 700; line-height: normal;}
+.chip-style-br{border-radius: 28px; background: #8E7660; padding: 8px 16px; color: var(--default-white); text-align: center;  font-family: Pretendard; font-size: 15px; font-style: normal; font-weight: 700; line-height: normal;}
+
+.chip-style-green{border-radius: 50px; background: #8FDA6B; color: var(--default-white);  font-family: Pretendard; font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; text-align: center;}
+.chip-style-bl{padding-top: 5px; border-radius: 68px; background: #549FE3; color: var(--default-white);  text-align: center; font-family: Inter; font-size: 27px; font-style: normal; font-weight: 400; line-height: normal;}
+.chip-style-neonGR{padding-top: 5px; border-radius: 68px; background: #4ABF48; color: var(--default-white);  text-align: center; font-family: Inter; font-size: 27px; font-style: normal; font-weight: 400; line-height: normal;}
+.chip-style-or{padding-top: 5px; border-radius: 68px; background: #FF8B37; color: var(--default-white);  text-align: center; font-family: Inter; font-size: 27px; font-style: normal; font-weight: 400; line-height: normal;}
+.chip-style-rd{padding-top: 5px; border-radius: 68px; background: var(--accent); color: var(--default-white);  text-align: center; font-family: Inter; font-size: 27px; font-style: normal; font-weight: 400; line-height: normal;}
+.chip-style-purple{padding-top: 5px; border-radius: 68px; background: #8F8DE8; color: var(--default-white);  text-align: center; font-family: Inter; font-size: 27px; font-style: normal; font-weight: 400; line-height: normal;}
+
+.ellipse-style-rd{width: 45px; height: 45px; background-color: var(--accent); border-radius: 50%; color: var(--default-white);  font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -0.32px;}
+.rec-style-bl{border-radius: 68px; background: #549FE3; color: var(--default-white); text-align: center; font-family: Pretendard; font-size: 27px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.27px;}

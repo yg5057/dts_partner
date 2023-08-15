@@ -1,0 +1,6 @@
+.btn-style-bg{ background: #E9E9E9;  border: 0.5px solid #D9CFC6; border-radius: 10px; color:#6D7683; font-family: Pretendard; font-size: 18px; font-style: normal; font-weight: 700;  line-height: 4px; letter-spacing: -1px;}
+.btn-style-rd{color:var(--default-white); background-color: var(--accent); border-radius: 16px;}
+.btn-style-pk{color:var(--button-rd); background-color: var(--button-bg-pk); border-radius: 16px;}
+.btn-style-gr{color:var(--button-gray); background-color: var(--button-bg-gray); border-radius: 16px;}
+.btn-tab-active{display: flex; justify-content: center; align-items: center; gap: .5em; border-bottom: 4px solid #333; background: #FFF; color: #000; text-align: center; font-family: Pretendard; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.36px;}
+.btn-tab-inactive{display: flex; justify-content: center; align-items: center; gap: .5em; background: #E0E0E0; color: #878787; text-align: center; font-family: Pretendard; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.36px;} 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <!-- Fullcalendar cdn-->
+    <script defer src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script defer src="../JS/fullcalendar.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+                <div class="inner__group">
+                    <div class="group__username">
+                        <i class="username-icon fa-solid fa-circle-user"></i>
+                        <p class="username-text">ooo님</p>
+                    </div>
+                    <img src="../image/Group 2817.png" alt="" class="group__alert">
+                </div>
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li>
+                        <a href="./pt_main.html" class="nav__menu">
+                            <i class="menu-icon fas fa-home"></i>
+                            <span class="menu-text">메인화면</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_couns.html" class="nav__menu">
+                            <i class="menu-icon fas fa-user"></i>
+                            <span class="menu-text">상담관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_couns_list.html" class="hide-text">상담 요청 목록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pt_construction_list.html" class="nav__menu">
+                            <i class="menu-icon fas fa-wallet"></i>
+                            <span class="menu-text">공사관리</span>
+                        </a>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_doc.html" class="nav__menu">
+                            <i class="menu-icon fas fa-question-circle"></i>
+                            <span class="menu-text">문서관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_doc_item.html" class="hide-text">항목 관리</a></li>
+                            <li><a href="./pt_doc_sampleList.html" class="hide-text">샘플 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_calculate.html" class="nav__menu">
+                            <i class="menu-icon fas fa-chart-bar"></i>
+                            <span class="menu-text">정산관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./pt_calculate_list.html" class="hide-text">최근 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">월 정산 목록</a></li>
+                            <li><a href="./pt_calculate_list.html" class="hide-text">공사 정산 목록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./pt_info.html" class="nav__menu">
+                            <i class="menu-icon fas fa-cog"></i>
+                            <span class="menu-text">정보관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__logout">
+                            <i class="menu-icon fas fa-sign-out-alt"></i>
+                            <span class="menu-text">로그아웃</span>
+                        </a>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">정산관리</p>
+                </div><!--main__top-->
+                <div class="main__bottom-calList">
+                    <div class="calList__gridCon">
+                        <div class="gridCon__info-left">
+                            <div class="calList__search-cal">
+                                <div class="search-cal__inputWrap">
+                                    <input type="text" class="searchbar-style01" placeholder="검색">
+                                    <i class="serchbar-icon fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="calList__date-group">
+                                <label class="date-label-text">시작일</label>
+                                <input type="date" id="start-date" class="input-style01">
+                                <label class="date-label-text">종료일</label>
+                                <input type="date" id="end-date" class="input-style01">
+                            </div>
+                            <div class="calList__btn-group">
+                                <button class="calList-btn btn-style-rd" onclick="">최근 순서 보기</button>
+                                <button class="calList-btn btn-style-rd" onclick="">월별로 보기</button>
+                                <button class="calList-btn btn-style-rd" onclick="">공사로 보기</button>
+                            </div>
+                        </div><!--gridCon__info-left-->
+                        <div class="gridCon__info-right">
+                            <div class="info-right__cal-top">
+                                <div class="cal-top__box">
+                                    <h3 class="box-text-calList">전체 공사 금액</h3>
+                                    <div class="amount__card-calList">
+                                        <p class="card-text-calList">123,000,000</p>
+                                    </div>
+                                </div>
+                                <div class="cal-top__box">
+                                    <h3 class="box-text-calList">수급 완료 금액</h3>
+                                    <div class="amount__card-calList">
+                                        <p class="card-text-calList">123,000,000</p>
+                                    </div>
+                                </div>
+                                <div class="cal-top__box">
+                                    <h3 class="box-text-calList">정산 예정 금액</h3>
+                                    <div class="amount__card-calList">
+                                        <p class="card-text-calList">123,000,000</p>
+                                    </div>
+                                </div>
+                            </div><!--info-right__cal-top-->
+                        </div><!--gridCon__info-right-->
+                    </div><!--info__gridCon-->
+                    <table class="grid__calList-table">
+                        <thead>
+                            <th class="calList-th border-left">공사 관리명</th>
+                            <th class="calList-th">총 공사 금액</th>
+                            <th class="calList-th">처리 금액</th>
+                            <th class="calList-th">날짜</th>
+                            <th class="calList-th border-right">비고</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="calList-td"><a class="calList-td-text" href="">광주광역시 동구 금남로 4가 6 3층 303호</a>
+                                </td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">2023.05.11</td>
+                                <td class="calList-td calList-td-position">
+                                    <div class="table__chip-calList chip-style-green">중도 1차</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="calList-td"><a class="calList-td-text" href="">광주광역시 동구 금남로 4가 6 3층 303호</a>
+                                </td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">2023.05.11</td>
+                                <td class="calList-td calList-td-position">
+                                    <div class="table__chip-calList chip-style-green">중도 1차</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="calList-td"><a class="calList-td-text" href="">광주광역시 동구 금남로 4가 6 3층 303호</a>
+                                </td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">2023.05.11</td>
+                                <td class="calList-td calList-td-position">
+                                    <div class="table__chip-calList chip-style-green">중도 1차</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="calList-td"><a class="calList-td-text" href="">광주광역시 동구 금남로 4가 6 3층 303호</a>
+                                </td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">2023.05.11</td>
+                                <td class="calList-td calList-td-position">
+                                    <div class="table__chip-calList chip-style-green">중도 1차</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="calList-td"><a class="calList-td-text" href="">광주광역시 동구 금남로 4가 6 3층 303호</a>
+                                </td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">60,000,000</td>
+                                <td class="calList-td">2023.05.11</td>
+                                <td class="calList-td calList-td-position">
+                                    <div class="table__chip-calList chip-style-green">중도 1차</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--main__bottom-calList-->
+                <div class="main__couns-pagewrap">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">&lt;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&gt;</a></li>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div><!--main__couns-pagewrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

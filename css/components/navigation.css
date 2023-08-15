@@ -1,0 +1,14 @@
+/* nav Section */
+.nav {position: relative; width: 280px; height: auto; background: var(--bg-login); overflow: hidden;}
+.nav__menu, .nav__logout { position: relative; display: table; width: 280px; padding: .8em; color: var(--nav-i-br); font-family: Pretendard; font-size: 24px; font-weight: 600; letter-spacing: -0.24px; transition: background-color 0.3s ease;}
+.nav__menu:hover, .menu__dropdown:hover .nav__menu {color: var(--nav-i-hover);background: var(--nav-i-br);}
+.menu-icon {position: relative; padding-left: .5em; font-size: 1em;  text-align: center;}
+.menu-text { position: relative;  margin-left: 1.2em;}
+.menu__hide { display: none; width: 280px; height: 180px; padding: 10px; background: var(--nav-i-br);}
+.menu__dropdown:hover .menu__hide {display: table;}
+.menu__hide li { padding: 1em 4em 0 0; text-align: right;}
+.hide-text { position: relative; color: var(--nav-i-hover); font-family: Pretendard; font-size: 18px; font-weight: 500; letter-spacing: -0.16px;}
+.hide-text:hover{color:#d9cfc698;}
+.nav__logout { position: absolute; bottom: 0;}
+.nav__logout:hover { background: var(--nav-i-br);}
+.nav__logout:hover .menu-text, .nav__logout:hover .menu-icon { color: var(--nav-i-hover);}

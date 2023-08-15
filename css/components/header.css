@@ -1,0 +1,11 @@
+/* Header Section */
+.header { min-width: 1920px; width: 100%; height: 122px; position: relative; display: flex; flex-direction: column; justify-content: space-between;}
+.header__img { width: 100%; height: 115px; position: absolute; z-index: -1; object-fit: cover;}
+.header__inner{ height: 115px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding:var(--padding-header-inner)}
+.header__line { min-width: 1920px; width: 100%; height: 7px; background-color: var(--accent);}
+.inner__group { display: flex;  align-items: center;}
+.inner__logo { width: 120px; height: 70px; }
+.group__username { width: 215px; height: 75px; display: flex; flex-direction: row; align-items: center; justify-content: center; margin-right: var(--margin-md); border-radius:3em; background:var(--header-gr);}
+.group__alert { width: 64px; height: 64px;}
+.username-icon { width: 53px; height: 49px; margin-top: 0.25em; font-size: 2.5em; text-align:center; color: var(--accent);}
+.username-text { color: var(--font-bk); font-family: Pretendard; font-size: 1.5em; font-style: normal; font-weight: 700; line-height: normal; text-align: center;}

@@ -1,0 +1,16 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+/* pt_item */
+.item-th-text{padding:.5em; text-align: left; color: #333; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 700; line-height: 18px; letter-spacing: -0.2px;}
+.item-td-text{padding:.5em; text-align: left; color: #000; font-family: Pretendard; font-size: 16px; font-style: normal; font-weight: 500; line-height: 18px; letter-spacing: -0.16px;}
+
+/* pt_doc_samplewrite */
+.samplewrite-th-text{color: #333; text-align: center; font-family: Pretendard; font-size: 22px; font-style: normal; font-weight: 600; line-height: 18px; letter-spacing: -0.22px;}
+.samplewrite-td-text{color: #333; text-align: center; font-family: Pretendard; font-size: 18px; font-style: normal; font-weight: 500; line-height: 18px; letter-spacing: -0.18px;}

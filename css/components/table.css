@@ -1,0 +1,16 @@
+/* pt_item */
+.item-th{width: 280px; height: 40px; border-radius: 4px 4px 0px 0px; border: 1px solid var(--border-gr); background: var(--button-bg-gray);}
+.item-tr{width: 280px; height: 34px; border-radius: 0px 0px 4px 4px; border: 1px solid var(--border-gr); background: var(--default-white);}
+/* pt_samplewrite */
+.samplewrite-th{width: 186px; height: 32px; border-radius: 4px 4px 0px 0px; border: 1px solid var(--border-gr); background: var(--button-bg-gray);}
+.samplewrite-td{width: 186px; height: 32px; border-radius: 0px 0px 4px 4px; border: 1px solid var(--border-gr); background: var(--default-white);}
+/* pt_info */
+.item-info-th{width: 680.881px; height: 70px; background: #E3E3E3; color: #333; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;}
+.item-info-td{color: #8A8A8A; font-family: Pretendard; font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; text-align: center;}
+/* pt_calculate_list */
+.calList-th{height: 70px; text-align: center; background: #E3E3E3; color: #333;  font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 600; line-height: normal;} 
+.calList-td{padding: .5em; text-align: center; color: #8A8A8A;  font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 500; line-height: normal;}
+
+/* ad_reqMan */
+.table-group__reqMan-th{padding: .5em; background: #E3E3E3; color: #333; text-align: center; font-family: Pretendard; font-size: 30px; font-style: normal; font-weight: 700; line-height: normal;}
+.table-group__reqMan-tr{padding: .5em; border-bottom: 2px solid #C0C0C0; color: #333; text-align: center; font-family: Inter; font-size: 27px; font-style: normal; font-weight: 400; line-height: normal;}

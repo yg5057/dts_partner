@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <!-- Fullcalendar cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="../JS/fullcalendar.js"></script>
+    <script src="../JS/fileupload.js" defer></script>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="main__bottom-list">
+                <div class="bottom-list__title">공사 관리 문서를 선택해주세요.</div>
+                <div class="bottom-list__search">
+                    <div class="seach__inputwrap">
+                        <input type="text" class="search__inputwrap-searchbar searchbar-style00"
+                            placeholder="검색어를 입력해 주세요.">
+                        <div class="search__inputwrap-circle-modal"></div>
+                        <i class="serch__inputwrap-icon-modal fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search__btn">
+                        <button class="btn-btn00 btn_style00">전체 상담보기</button>
+                        <button class="btn-btn01 btn_style00">현장 방문 신청보기</button>
+                    </div>
+                </div><!--bottom-list__search-->
+                <div class="bottom-list__table">
+                    <table class="table__couns-tb">
+                        <thead class="couns-tb__couns-th">
+                            <tr>
+                                <th class="counslist-th-text couns-td-input"></th>
+                                <th class="counslist-th-text">번호</th>
+                                <th class="counslist-th-text">현장명</th>
+                                <th class="counslist-th-text">면적</th>
+                                <th class="counslist-th-text">희망금액</th>
+                                <th class="counslist-th-text">진행상황</th>
+                            </tr>
+                        </thead>
+                        <tbody class="couns-tb__couns-td">
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option5" id="option5"></td>
+                                <td class="couns-td-text"><label for="option5">5</label></td>
+                                <td class="couns-td-text"><label for="option5">광주광역시 동구 금남로 4가 6, 3층 303호</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option5">200m^2</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option5">123,000,000</label></td>
+                                <td class="couns-td-text text-clr-accent"><label for="option5">요청됨</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option4" id="option4"></td>
+                                <td class="couns-td-text"><label for="option4">4</label></td>
+                                <td class="couns-td-text"><label for="option4">광주광역시 동구 금남로 4가 6, 3층 303호</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option4">200m^2</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="optio4">123,000,000</label></td>
+                                <td class="couns-td-text text-clr-accent"><label for="option4">요청됨</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option3" id="option3"></td>
+                                <td class="couns-td-text"><label for="option3">3</label></td>
+                                <td class="couns-td-text"><label for="option3">광주광역시 동구 금남로 4가 6, 3층 303호</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option3">200m^2</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option3">123,000,000</label></td>
+                                <td class="couns-td-text text-clr-accent"><label for="option3">요청됨</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option2" id="option2"></td>
+                                <td class="couns-td-text"><label for="option2">2</label></td>
+                                <td class="couns-td-text"><label for="option2">광주광역시 동구 금남로 4가 6, 3층 303호</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option2">200m^2</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option2">123,000,000</label></td>
+                                <td class="couns-td-text text-clr-accent"><label for="option2">요청됨</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option1" id="option1"></td>
+                                <td class="couns-td-text"><label for="option1">1</label></td>
+                                <td class="couns-td-text"><label for="option1">광주광역시 동구 금남로 4가 6, 3층 303호</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option1">200m^2</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option1">123,000,000</label></td>
+                                <td class="couns-td-text text-clr-accent"><label for="option1">요청됨</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!--main__bottom-list-->
+            <div class="main__couns-pagewrap">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&gt;</a></li>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div><!--main__couns-pagewrap-->
+            <div class="main__btn-modal">
+                <button type="button" name="chooseConsDoc" class="btn-modal btn-style-rd">선택하기</button>
+            </div>
+        </div><!--modal-wrap-->
+    </div><!--modal-->
+</body>
+
+</html>
