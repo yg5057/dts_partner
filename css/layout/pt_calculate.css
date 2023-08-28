@@ -5,7 +5,7 @@
 /* main-bottom */
 .dash-bottom__box { width: 100%; height: auto; margin-top: 10px; border-radius: 10px;}
 .box__gridCon-calculate{ display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 2.5em;}
-.grid-top__textbox{ width: 545.042px; height: 178px; margin: 5em 2.5em 2.5em 6em; border-radius: 10px; border: 1px dashed #E75A5A;}
+.grid-top__textbox{ width: 545px; height: 178px; margin: 5em 2.5em 2.5em 6em; border-radius: 10px; border: 1px dashed #E75A5A;}
 /* table-style */
 .grid__tablehead { padding: 20px; height: 70px; border-radius: 10px; background-color: var(--main-tablehd);}
 .tablehead-text { color: var(--font-bk); font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;}
