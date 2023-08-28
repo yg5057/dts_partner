@@ -1,9 +1,9 @@
 /* pt_construction_list.css*/
 /* main__top */
+.cons__top{display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 20px 0 0 20px;}
 .top-box{margin-right: 40em;}
 .top__grid-4items{display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; place-items: center;}
 .grid-4items__ellipse{width: 10em; height: 4em; display:flex; flex-direction: row; justify-content: center; align-items: center; border-radius: 35px;}
- /* main__bottom  */
 /* ellipse-style */
 .ellipse-text00{margin-right: .5em; text-align: center; font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;}
 .ellipse-text01{color: #FFF; text-align: center; font-family: Pretendard; font-size: 40px; font-style: normal; font-weight: 500; line-height: normal;}
